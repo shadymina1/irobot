@@ -1,0 +1,30 @@
+﻿@page
+@model irobot.Pages.ProfileModel
+@{
+}
+
+<h1>Profile </h1>
+
+<div class="container" id="profile_info">
+    <div class="profile_text">
+        <img src="https://via.placeholder.com/150" alt="">
+
+        <hr>
+
+        <h5>First Name: @Model.fname</h5> <hr>
+        <h5>Last Name:  @Model.lname </h5> <hr>
+        <h5>Email: @Model.email </h5>
+    </div>
+    <div class="usage">
+        <form action="" method="post">
+            <input type="text" asp-for="user.fname" placeholder="First Name">
+            <input type="text" asp-for="user.lname" placeholder="Last Name">
+            <input type="text" asp-for="user.email" placeholder="Email Name">
+            <input type="text" asp-for="user.password" placeholder="Password">
+            <input type="submit" value="Sign Up" class="btn btn-danger">
+        </form>
+
+    </div>
+
+</div>
+
